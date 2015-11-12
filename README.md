@@ -46,7 +46,7 @@ Quickly add a few rows to the movies table:
 ### Validations
 
 Let's add the following validation rules to guard our tables against bogus rows sneaking in. Refer to the [official RailsGuide on Validations](http://guides.rubyonrails.org/active_record_validations.html#numericality).
-    
+
     Movie:
      - director_id: must be present
      - title: must be present; must be unique in combination with year
@@ -146,6 +146,7 @@ Whenever you add a model, you should immediately try to put in your validations 
      - bio: no rules
      - image_url: no rules
 
+
 ### Every Many-to-Many is just two One-to-Manies
 
 We now have two foreign keys in the characters table. That means, essentially, **we've broken the many-to-many between Movies and Actors down into two one-to-manies**. A character belongs to a movie, a movie has many characters. A character belongs to an actor, an actor has many characters.
@@ -171,7 +172,7 @@ Now that you have a list of character names on a movie's show page, replace the 
 Now that you have a list of character names on a actor's show page, replace the character name with the movie title -- voilà, we have a filmography.
 
 **We have achieved the many-to-many relationship between movies and actors by adding a join table (characters) and then building two one-to-manies.**
-
+## I STOPED HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ## Association Helper Methods
 
 Now that we have an understanding of how to establish one-to-manies and many-to-manies in our data tables (basically, you just have to put foreign keys in the right places), let's look at some convenience methods that Rails gives us for working with associations.

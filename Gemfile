@@ -44,3 +44,5 @@ gem 'capybara', group: [:test, :development]
 gem 'quiet_assets', group: [:test, :development]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'hirb'
+gem 'starter_generators', :git => "http://github.com/rbetina/starter_generators.git"
+
